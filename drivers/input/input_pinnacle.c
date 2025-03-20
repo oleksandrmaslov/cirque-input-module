@@ -5,7 +5,7 @@
 #include <zephyr/input/input.h>
 #include <zephyr/pm/device.h>
 #include <zephyr/logging/log.h>
-#include <zmk-input-gestures/drivers/input/input_processor_gestures.c>
+#include <zmk-input-gestures/drivers/input/circular_scroll.h>
 #include "input_pinnacle.h"
 
 LOG_MODULE_REGISTER(pinnacle, CONFIG_INPUT_LOG_LEVEL);
