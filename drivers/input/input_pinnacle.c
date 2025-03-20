@@ -350,6 +350,10 @@ static void pinnacle_report_data_rel(const struct device *dev) {
 
     data->btn_cache = btn;
 
+    if (scroll_mode_active) {
+        return;
+    }
+  
     input_report_rel(dev, INPUT_REL_X, dx, false, K_FOREVER);
     input_report_rel(dev, INPUT_REL_Y, dy, true, K_FOREVER);
 
