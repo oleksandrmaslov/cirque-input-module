@@ -4,9 +4,8 @@
 #include <zephyr/init.h>
 #include <zephyr/input/input.h>
 #include <zephyr/pm/device.h>
-
 #include <zephyr/logging/log.h>
-
+#include "circular_scroll.h"
 #include "input_pinnacle.h"
 
 LOG_MODULE_REGISTER(pinnacle, CONFIG_INPUT_LOG_LEVEL);
